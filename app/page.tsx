@@ -181,7 +181,7 @@ export default function App() {
     };
 
     return (
-        <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-blue-500 selection:text-white pb-16">
+        <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-blue-500 selection:text-white pb-0">
             {/* Header */}
             <header className="sticky top-0 z-30 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 lg:px-8 py-4">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -320,6 +320,48 @@ export default function App() {
                     </div>
                 </div>
             </main>
+
+            <footer className="mt-10 border-t border-slate-800">
+                <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 overflow-x-auto px-4 py-8 text-xs leading-none text-slate-500 lg:px-8">
+                    <p className="shrink-0 whitespace-nowrap">
+                    Open source credit: {" "}
+                    <a
+                        href="https://microtronic.biz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-300 underline decoration-slate-600 underline-offset-4 transition hover:text-white"
+                    >
+                        microtronic.biz
+                    </a>
+                    </p>
+                    <nav aria-label="Footer links" className="ml-auto flex shrink-0 items-center gap-5 whitespace-nowrap">
+                    <a
+                        href="https://microtronic-thailand.github.io/micro-payment/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-400 underline decoration-slate-700 underline-offset-4 transition hover:text-white"
+                    >
+                        Donate
+                    </a>
+                    <a
+                        href="https://microtronic-thailand.github.io/terms-conditions/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-400 underline decoration-slate-700 underline-offset-4 transition hover:text-white"
+                    >
+                        Terms &amp; Conditions
+                    </a>
+                    <a
+                        href="https://microtronic-thailand.github.io/privacy-policy/?lang=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-400 underline decoration-slate-700 underline-offset-4 transition hover:text-white"
+                    >
+                        Privacy Policy
+                    </a>
+                    </nav>
+                </div>
+            </footer>
 
             { }
             {showPreviewModal && (
